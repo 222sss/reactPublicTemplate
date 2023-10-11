@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+div:focus {
+  outline: none;
+}
+
+.adaptation-border::before {
+  position: absolute;
+  bottom: -50%;
+  left: -50%;
+  border: 1px solid blue;
+  width: 200%;
+  height: 200%;
+  content: '';
+  transform: scale(0.5);
+}
