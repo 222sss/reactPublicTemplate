@@ -1,8 +1,11 @@
 import React from 'react';
-import './index.less';
-
+import { Link } from 'react-router-dom';
 const Home: React.FC = () => {
-  return <div className="home">首页</div>;
+  return (
+    <div>
+      <Link to="/yourActiveRule2">gogogo</Link>
+    </div>
+  );
 };
 
 export default Home;
